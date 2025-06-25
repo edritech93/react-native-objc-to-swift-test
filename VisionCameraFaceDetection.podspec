@@ -13,7 +13,9 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => min_ios_version_supported }
   s.source       = { :git => "https://github.com/edritech93/vision-camera-face-detection.git", :tag => "#{s.version}" }
 
-  s.source_files = "ios/**/*.{h,m,mm,cpp}"
+  s.source_files  = "ios/**/*.{h,m,mm,swift}"
+  s.requires_arc  = true
+  s.swift_version = '5.0'
   s.private_header_files = "ios/**/*.h"
 
 
